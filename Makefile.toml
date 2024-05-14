@@ -1,0 +1,16 @@
+[tasks.build]
+command = "cargo"
+args = ["build"]
+
+[tasks.test]
+command = "cargo"
+args = ["test"]
+
+[tasks.css]
+command = "npx"
+args = ["tailwindcss", "-i", "./tailwind.css", "-o", "./style/output.css", "--watch"]
+
+[tasks.run]
+
+command = "cargo"
+args = ["leptos", "watch"]

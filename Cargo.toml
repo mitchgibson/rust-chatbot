@@ -5,6 +5,8 @@ edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+name = "chatbot"
+path = "src/lib.rs"
 
 [dependencies]
 actix-files = { version = "0.6", optional = true }

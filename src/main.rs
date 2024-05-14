@@ -1,11 +1,13 @@
+mod components;
+
 #[cfg(feature = "ssr")]
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     use actix_files::Files;
     use actix_web::*;
+    use chatbot::app::*;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use chatbot::app::*;
 
     #[get("/output.css")]
     async fn css() -> impl Responder {
