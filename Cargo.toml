@@ -91,4 +91,4 @@ lib-default-features = false
 lib-profile-release = "wasm-release"
 
 # Optional, Activates the tailwind build
-tailwind-input-file = "style/tailwind.css"
+tailwind-input-file = "style/output.css"
